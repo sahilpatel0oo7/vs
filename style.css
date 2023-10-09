@@ -6,10 +6,15 @@
 }
 
 body{
-    background-color: aquamarine;
-    
-
+    background-color:white;
 }
+
+button{
+    border: 0;
+}
+
+/* Header */
+
 
 .navBar{
     display: flex;
@@ -22,6 +27,7 @@ body{
     height: 80px;
     box-shadow: 0 5px 20px rgb(0, 0, 0);
     opacity: 0.5;
+ 
 }
 
 ul{
@@ -31,17 +37,39 @@ ul{
 }
 li{
     list-style: none;
+    position: relative;
 }
 a{
     color: white;
     text-decoration: none;
 transition: 0.3s ease;
+font-family: 'Young Serif', serif;
 }
-a:hover{
+a:hover,a.active{
     color: blueviolet;
 }
-span{
-    cursor:pointer
+.logo {
+    cursor: pointer;
+     font-family: 'Young Serif', serif;
+}
+
+a.active::after,
+a:hover::after{
+    content: "";
+position: absolute;
+background: hotpink;
+width: 60%;
+height: 4px;
+bottom: -1px;
+left: 5px;
+
+}
+
+
+
+
+i{
+    cursor: pointer
 }
 
 .pg{
@@ -53,7 +81,7 @@ height: 100vh;
     background-position: top 30% right 0%;
 }
 
-.one{
+.wallpaper{
     position: relative;
 display: flex;
 align-items: flex-start;
@@ -68,24 +96,35 @@ font-size: 50px;
 
 .f-box1 img{
     width: 200px;
+    
 }
 
 .f-box1{
+    box-shadow: 20px 30px 34px rgb(0, 0, 0, 0.3);
+    border: 2px solid black;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 2px solid grey;
-    background-color: aliceblue;
+   
+    
     border-radius: 4px;
     margin: 12px 6px;
     cursor: pointer;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
 .f-box1:hover{
-    background-color: bisque;
+    margin-top: -50px;
 }
 
+.f-box1 h6{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+line-height: 1;
+color: rgb(6, 50, 36);
+border-radius: 4px;
+padding: 10px 40px;
+}
 
 
 
@@ -94,7 +133,334 @@ font-size: 50px;
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    background-color: aqua;
+    margin: 40px 0;
+    background-image: url(images/interview-2211354_1920.jpg);
+    background-size: cover;
 
+
+}
+
+.products{
+text-align: center;
+padding: 40px;
+
+
+}
+
+.products .pro-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.products .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid pink;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0
+        , 0, blue, alpha);
+
+}
+.products h2{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+
+
+    
+
+
+.f-box1:hover::after{
+    margin-top: 25px;
+}
+
+.cool{
+    height: 200px;
+    width: 200px;
+    border: 3px solid gray;
+    background-color: whitesmoke;
+    margin: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 19px;
+}
+
+.products img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.button{
+    border-radius: 29px;
+    padding: 15px;
+    color: black;
+    background-color: bisque;
+    width: 200px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.product-head{
+   padding-bottom:30px ;
+}
+
+.banner{
+    margin: 40px 0;
+    text-align: center;
+    position: relative;
+   
+ background-image: url(images/Beige\ Brown\ Minimalist\ Casual\ Style\ Banner\ Landscape\ \(1\).png);
+width: 100%;
+height: 60vh; 
+background-size: cover;
+background-position: center;
+}
+
+.explr-btn{
+    position: absolute;
+    bottom: 50px;
+    left: 20%;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 9px;
+    background-color: beige;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.products p{
+    color: gainsboro;
+    font-size: 30px;
+}
+
+#banners {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 40px;
+}
+
+#banners .banner-box{
+        text-align: center;
+        position: relative;
+    background-image: url(images/Black\ White\ Yellow\ Luxury\ Fashion\ Business\ Facebook\ Cover\ \ \(1\).png);
+    background-repeat: no-repeat;   
+    background-size: 100% 100%;
+    width: 50%;
+    height: 50vh;
+        background-position: center;
+        position: relative;
+
+}
+
+
+
+
+
+
+.banner-box2{
+            text-align: center;
+                position: relative;
+                background-image: url(images/Black\ White\ Yellow\ Luxury\ Fashion\ Business\ Facebook\ Cover\ .png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                width: 50%;
+                height: 50vh;
+                background-position: center;
+                border: 1px solid black;
+                position: relative;
+}
+
+.banner-btn {
+    position: absolute;
+    bottom: 22%;
+    left: 37%;
+    color: rgb(164, 164, 80);
+    background-color: transparent;
+    border: 0;
+    font-size: 28px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#banners .banner-box:hover .banner-btn{
+    background-color: rgb(26, 50, 69);
+}
+
+.banner-btn2 {
+        width: 150px;
+        height: 50px;
+        background: transparent;
+        position: absolute;
+        left: 23px;
+        bottom: 7%;
+        cursor: pointer;
+}
+
+#banners .banner-box2:hover .banner-btn2{
+    border: 2px solid grey;
+
+    border-radius: 3px;
+            transition: ease 0.3s;
+}
+
+.lst-bn{
+    display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0 40px;
+}
+
+.banner-1{
+
+    background-repeat: no-repeat;
+    background-image: url(images/sm1.png);
+    background-size: 100% 100%;
+    width: 33%;
+    height: 50vh;
+    background-position: center;
+}
+.banner-2{
+
+background-image: url(images/sm2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 33%;
+    height: 50vh;
+    background-position: center;
+}
+.banner-3{
+
+    background-image: url(images/sm3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 33%;
+    height: 50vh;
+    background-position: center;
+}
+
+.newsletter{
+    margin: 50px 0;
+    background-color: rgb(54, 54, 110);
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.newstext{
+    width: 50%;
+    display: flex;
+ flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.newstext h4{
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+.newstext p{
+    color: #6f6767;
+    font-size: 15px;
+    margin-top: 10 px;
+}
+
+.signup{
+width: 50%;
+display: flex;
+margin: 10px;
+height: 20%;
+}
+
+.input{
+    width: 70%;
+font-size: 20px;
+border: 1px solid transparent;                                                          
+outline: none; 
+border-radius: 4px;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+}
+
+
+.signup-btn{
+    color: floralwhite;
+    border-radius: 4px;
+    width: 30%;
+    background-color: rgb(166, 101, 35);
+cursor: pointer;
+font-size: 18px;
+font-weight: 700;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.signup-btn:hover{
+background-color: chocolate;
+transition: ease 0.3s;
+}
+
+.newstext span{
+    color: tomato;
+}
+
+footer img {
+    width: 200px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.bhoomi-logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 15px;
+    margin: 0 0 14px 0;
+}
+
+footer a{
+    color: #6f6767;
+font-size: 13px;
+text-decoration: none;
+margin-bottom:10px ;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color:#6f6767;
+    padding-right: 4px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
