@@ -550,7 +550,7 @@ background-color: #cce7d0;
 
 
 #navBar.active{
-        right: 0px;
+        right: 0px;ˀ
     }
 
     #navBar li{
@@ -572,4 +572,40 @@ padding-left: 25px;
 
 
 
+}
+
+@media (max-width:450px) {
+    .pg .logo{
+        font-size: 21px;
+    }
+
+    .mobile {
+        
+        margin-right: -40px;
+    }
+
+    .wallpaper h2{
+        font-size: 20px;
+    }
+    .wallpaper h1{
+        font-size: 35px;
+    }
+
+    .wallpaper p{
+        font-size: 20px;
+    }
+    .wallpaper button{
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .pro-container{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .pro-container .pro{
+       width: 350px;
+    }
+ 
 }
